@@ -6,4 +6,5 @@ pyvenv.cfg
 .env
 **__pycache__
 /share
-.tp1
+/tp1
+
