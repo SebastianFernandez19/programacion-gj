@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "018eb640-cb82-4e70-80d7-3bc6922fc204",
+		"name": "usuario_profesor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26846976"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/usuario_profesor/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"usuario_profesor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/usuario_profesor/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"usuario_profesor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

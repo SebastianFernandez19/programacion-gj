@@ -3,15 +3,17 @@ from flask import request
 
 USUARIOS ={
     1: {"nombre":"Sebastian","apellido":"Fernandez"},
-    2: {"nombre":"Marcos","apellido":"Diaz"}
-    }
+    2: {"nombre":"Marcos","apellido":"Diaz"},
+    3: {"nombre":"Natalio","apellido":"Hercovich"}
+}
 
-USUARIOS_PROFESOR ={
+USUARIO_PROFESOR ={
     1: {"nombre":"Sebastian","apellido":"Fernandez"}
 }
 
 USUARIOS_ALUMNO ={
-    1:{"nombre":"Marcos","apellido":"Diaz"}
+    1:{"nombre":"Marcos","apellido":"Diaz"},
+    2:{"nombre":"Natalio","apellido":"Hercovich"}
 }
 class Usuario(Resource):
     def get(self,id):
@@ -75,13 +77,13 @@ class UsuarioAlumno(Resource):
     
 class UsuarioProfesor(Resource):
     def get(self,id):
-        if int(id) in USUARIOS_PROFESOR:
-            return USUARIOS_PROFESOR[int(id)]
+        if int(id) in USUARIO_PROFESOR:
+            return USUARIO_PROFESOR[int(id)]
         return "", 404
     
     def put(self,id):
-        if int(id) in USUARIOS_PROFESOR:
-            usuario = USUARIOS_PROFESOR[int(id)]
+        if int(id) in USUARIO_PROFESOR:
+            usuario = USUARIO_PROFESOR[int(id)]
             data = request.get_json()
             usuario.update(data)
             return "", 201

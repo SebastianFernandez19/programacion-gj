@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "2f2dbf02-fb8f-472e-bc04-66d62786d20b",
+		"name": "planificacion_alumno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26846976"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/planificacion_alumno/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"planificacion_alumno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
