@@ -3,8 +3,9 @@
 /lib
 /lib64
 pyvenv.cfg
-.env
 **__pycache__
 /share
 /tp1
 /env
+/env/*
+

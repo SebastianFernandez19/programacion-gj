@@ -1,9 +1,10 @@
 from flask_restful import Resource
+from flask import request
+from .. import db
+from main.models import ProfesorModel
 
-PROFESORES = {
-    1: {"nombre":"Sebastian","apellido":"Fernandez","Clases":"Crossfit",}
-}
 
 class ProfesorClases(Resource):
-     def get(self):
-        return PROFESORES
+     def get(self,id):
+        profesor=db.session.query(ProfesorModel).get_or_404(id)
+        return profesor.to_json()
